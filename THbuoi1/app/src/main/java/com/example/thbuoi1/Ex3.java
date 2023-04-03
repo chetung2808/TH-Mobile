@@ -22,7 +22,7 @@ public class Ex3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Date t = new Date();
-                String message = "Thoi gian hiện hành" + t.toLocaleString();
+                String message = "Thời gian hiện hành " + t.toLocaleString();
                 ad.setMessage(message);
                 ad.show();
             }
