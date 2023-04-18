@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ThMobileWeek2"
+        tools:targetApi="31">
+
+    <activity
+        android:name=".MainActivity"
+        android:exported="true"
+        android:label="Exercise1">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".Ex2"
+        android:parentActivityName=".MainActivity"
+        android:exported="false"
+        android:label="Exercise2" />
+
+    <activity
+        android:name=".Ex3"
+        android:parentActivityName=".MainActivity"
+        android:exported="false"
+        android:label="Exercise3" />
+
+    <activity
+        android:name=".Ex3History"
+        android:parentActivityName=".MainActivity"
+        android:exported="false"
+        android:label="Exercise3" />
+
+    <activity
+        android:name=".Ex4"
+        android:parentActivityName=".MainActivity"
+        android:exported="false"
+        android:label="Exercise4" />
+
+    <activity
+        android:name=".Ex4ViewContactActivity"
+        android:parentActivityName=".MainActivity"
+        android:exported="false"
+        android:label="Exercise4"/>
+
+    <activity
+        android:name=".Ex5"
+        android:parentActivityName=".MainActivity"
+        android:exported="false"
+        android:label="Exercise5"/>
+
+
+
+</application>
+</manifest>
