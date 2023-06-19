@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Week5"
+        tools:targetApi="31">
+        <activity
+            android:name=".Ex3.RingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Ex4.Exercise4"
+            android:exported="false"
+            android:label="Exercise 4" />
+        <activity
+            android:name=".Ex3.Exercise3"
+            android:exported="false"
+            android:label="Exercise 3" />
+        <activity
+            android:name=".Ex2.Exercise2"
+            android:exported="false"
+            android:label="Exercise 2" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Exercise 1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
